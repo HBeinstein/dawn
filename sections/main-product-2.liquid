@@ -7,7 +7,7 @@
   <div class="rte">
     {%- if section.settings.hero-image != blank -%}
       <img
-      src="{{ section.settings.hero-image }}"
+      src="{{ section.settings.hero_image }}"
       width="{{ image.width }}"
       height="{{ image.height }}"
       loading="lazy"
@@ -26,7 +26,7 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "hero-image",
+      "id": "hero_image",
       "label": "Image"
     },
     {

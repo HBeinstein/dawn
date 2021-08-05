@@ -1,10 +1,22 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-2"
+      "type": "main-product-2",
+      "settings": {
+        "hero_image_url": "{{ product.metafields.my_fields.hero_image.value }}",
+        "title": "{{ product.title }}"
+      }
     },
     "product-recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [

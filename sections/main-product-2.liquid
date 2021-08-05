@@ -6,7 +6,12 @@
   </h2>
   <div class="rte">
     {%- if section.settings.hero-image != blank -%}
-      {{ section.settings.hero-image }}
+      <img
+      src="{{ section.settings.hero-image }}"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      loading="lazy"
+      >
     {%- else -%}
       <div class='page-placeholder-wrapper placeholder'>
         {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
@@ -17,7 +22,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.hero-image.name",
+  "name": "Main Product 2",
   "settings": [
     {
       "type": "image_picker",
